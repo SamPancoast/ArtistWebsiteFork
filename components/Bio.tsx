@@ -25,7 +25,7 @@ export const Bio: React.SFC = () => {
         />
         <Fade cascade>
           <h1 className="text-xl my-6 w-full md:w-4/5 text-center mx-auto">
-            This is me !
+            A still from Jitter visuals generated while creating 'refurbishing week 9'.
           </h1>
           <p className="text-base my-6 w-full md:w-4/5 text-justify mx-auto">
             {data.aboutme_para1}

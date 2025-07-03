@@ -3,7 +3,7 @@ export const data = {
   job: "Artist",
   email: "voshgnoffmusic@gmail.com",
   instagram_link: "https://www.instagram.com/voshgnoff/",
-  facebook_link: "I don't have facebook",
+  facebook_link: "https://open.spotify.com/artist/33e5OvdpZnkpXdhNQ2ilTs",
   aboutme_para1:
     "Voshgnoff is an anonymous collection of an artist's work with no particular goal outside of self-expression.",
   aboutme_para2:
