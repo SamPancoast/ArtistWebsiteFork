@@ -1,6 +1,6 @@
 import * as React from "react";
 
-// Using require as normal import causes typescript error
+// Using require as normal import causes TypeScript error
 const Fade = require("react-reveal/Fade");
 import { data } from "../mock/mock";
 
@@ -18,17 +18,23 @@ export const Contact: React.SFC = () => {
               {data.email}
             </h3>
           </div>
+
           <form
-            className="grid grid-rows-6 gap-6"
-            action="https://formsubmit.co/garimamalik28199@gmail.com"
+            action="https://formspree.io/f/mjkrzlla"
             method="POST"
+            className="grid grid-rows-6 gap-6"
           >
             <input
               type="hidden"
               name="_subject"
               value="Someone wants to contact you from website"
             />
-            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourwebsite.com/thanks" // change to your real domain
+            />
+
             <div className="row-span-1 w-full h-16 grid grid-rows-3 grid-cols-1 gap-2">
               <label
                 htmlFor="name"
@@ -41,9 +47,10 @@ export const Contact: React.SFC = () => {
                 name="name"
                 id="name"
                 className="row-span-2 h-full w-full bg-transparent border focus:outline-none border-gray-500 p-2 text-sm text-gray-600 font-light"
-                required={true}
+                required
               />
             </div>
+
             <div className="row-span-1 w-full h-16 grid grid-rows-3 grid-cols-1 gap-2">
               <label
                 htmlFor="email"
@@ -56,9 +63,10 @@ export const Contact: React.SFC = () => {
                 name="email"
                 id="email"
                 className="row-span-2 h-full w-full bg-transparent border focus:outline-none border-gray-500 p-2 text-sm text-gray-600 font-light"
-                required={true}
+                required
               />
             </div>
+
             <div className="row-span-1 w-full h-16 grid grid-rows-3 grid-cols-1 gap-2">
               <label
                 htmlFor="phone"
@@ -73,6 +81,7 @@ export const Contact: React.SFC = () => {
                 className="row-span-2 h-full w-full bg-transparent border focus:outline-none border-gray-500 p-2 text-sm text-gray-600 font-light"
               />
             </div>
+
             <div className="row-span-2 w-full h-36 grid grid-rows-5 grid-cols-1 gap-2">
               <label
                 htmlFor="message"
@@ -84,16 +93,17 @@ export const Contact: React.SFC = () => {
                 name="message"
                 id="message"
                 className="row-span-4 h-full w-full bg-transparent border focus:outline-none border-gray-500 p-2 text-sm text-gray-600 font-light resize-none"
-                required={true}
+                required
               ></textarea>
             </div>
+
             <div className="row-span-1 w-full h-16 grid grid-rows-3 grid-cols-1 gap-2">
               <input
                 type="submit"
                 name="submit"
                 id="submit"
                 value="Submit"
-                className="cursor-pointer hover:bg-gray-800 transittion-all duration-300 row-start-2 row-span-2 h-full w-full max-w-xs mx-auto bg-gray-600 text-gray-100 border focus:outline-none border-gray-500"
+                className="cursor-pointer hover:bg-gray-800 transition-all duration-300 row-start-2 row-span-2 h-full w-full max-w-xs mx-auto bg-gray-600 text-gray-100 border focus:outline-none border-gray-500"
               />
             </div>
           </form>
