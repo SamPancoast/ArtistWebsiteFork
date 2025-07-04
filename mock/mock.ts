@@ -51,6 +51,11 @@ export const data = {
       label: "Upcoming Project",
       description: "Coming soon...",
     },
+    {
+      url: "/divaDown.png", // or use a hosted image
+      label: "Upcoming Project",
+      description: "Coming soon...",
+    },
     
     // You can add more here
   ],
