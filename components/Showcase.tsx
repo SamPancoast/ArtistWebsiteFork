@@ -1,3 +1,5 @@
+import { data } from "../mock/mock";
+
 import * as React from "react";
 import { useState } from "react";
 
@@ -14,7 +16,8 @@ export interface ShowcaseProps {
 export const Showcase: React.SFC<ShowcaseProps> = (ShowcaseProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  const images: object[] = useDatabase("images", ShowcaseProps.limit);
+  const images: object[] = data.projects;
+
 
   return (
     <>
