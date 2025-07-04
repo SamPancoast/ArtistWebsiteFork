@@ -8,7 +8,7 @@ export const data = {
     "Voshgnoff is an anonymous collection of an artist's work with no particular goal outside of self-expression.",
   aboutme_para2:
     "Voshgnoff currently only has released an ambient piece titled 'refurbishing week 9' and has no plans to release new projects until they feel like it.",
-
+  artistImage: "/image_01.jpg",  // <-- add this
   // ✅ Add this:
   projects: [
     {
